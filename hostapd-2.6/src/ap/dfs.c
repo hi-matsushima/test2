@@ -26,7 +26,7 @@ static int dfs_get_used_n_chans(struct hostapd_iface *iface, int *seg1)
 	*seg1 = 0;
 
 	if (iface->conf->ieee80211n && iface->conf->secondary_channel)
-		n_chans = 4;
+		n_chans = 3;
 
 	if (iface->conf->ieee80211ac) {
 		switch (iface->conf->vht_oper_chwidth) {
